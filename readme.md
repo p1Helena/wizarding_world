@@ -11,6 +11,23 @@
 [English](#english) | [Português](#português)
 
 🔗 **Live Demo:** https://wizardingworld-liard.vercel.app/
+---
+
+## Disclaimer | Aviso Legal
+
+This is an unofficial, non-commercial educational project. All rights to the original franchises, characters, images, videos, trademarks, and related materials belong to their respective copyright holders.
+
+Este é um projeto educacional, não oficial e sem fins comerciais. Todos os direitos sobre as franquias, personagens, imagens, vídeos, marcas e materiais relacionados pertencem aos seus respectivos titulares.
+
+## Project Preview | Demonstração
+
+### Desktop
+
+![Desktop Preview](./screenshots/desktop.png)
+
+### Mobile
+
+![Mobile Preview](./screenshots/mobile.png)
 
 ---
 
@@ -274,19 +291,3 @@ Front-End Developer | UX/UI Designer | Architect
 - GitHub: https://github.com/p1Helena
 
 ---
-
-## Disclaimer | Aviso Legal
-
-This is an unofficial, non-commercial educational project. All rights to the original franchises, characters, images, videos, trademarks, and related materials belong to their respective copyright holders.
-
-Este é um projeto educacional, não oficial e sem fins comerciais. Todos os direitos sobre as franquias, personagens, imagens, vídeos, marcas e materiais relacionados pertencem aos seus respectivos titulares.
-
-## Project Preview | Demonstração
-
-### Desktop
-
-![Desktop Preview](./screenshots/desktop.png)
-
-### Mobile
-
-![Mobile Preview](./screenshots/mobile.png)
