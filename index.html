@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore o universo mágico de Harry Potter e Animais Fantásticos. Conheça os filmes, personagens e curiosidades do Wizarding World.">
     <title>Wizarding World</title>
     <!-- css -->
     <link rel="stylesheet" href="./dist/css/main.css">
@@ -182,23 +183,23 @@
         </ul>
     </section>
     <section class="personagens" id="personagens">
-        <nav class="personagens_tabs">
-            <button data-tab-button="harry" class="personagens_tabs_button personagens_tabs_button--is-active">
+        <nav class="personagens_tabs" aria-label="Categorias de personagens">
+            <button type="button" data-tab-button="harry" class="personagens_tabs_button personagens_tabs_button--is-active">
                 Harry Potter
             </button>
-            <button data-tab-button="beasts" class="personagens_tabs_button">
+            <button type="button" data-tab-button="beasts" class="personagens_tabs_button">
                 Animais Fantásticos
             </button>
-            <button data-tab-button="repeated" class="personagens_tabs_button">
-                Personagens Repitidos
+            <button type="button" data-tab-button="repeated" class="personagens_tabs_button">
+                Personagens Repetidos
             </button>
         </nav>
 
         <div  class="personagens_select_container">
-            <select class="personagens_select">
+            <select class="personagens_select" id="personagens_select" name="personagens" aria-label="Selecionar universo dos personagens">
                 <option value="harry">Harry Potter</option>
                 <option value="beasts">Animais Fantásticos</option>
-                <option value="repeated">Personagens Repitidos</option>
+                <option value="repeated">Personagens Repetidos</option>
             </select>
             <i class="bi bi-caret-down-fill" aria-hidden="true"></i>
         </div>
@@ -245,11 +246,11 @@
     </section>
 
     <section class="personage" id="personage">
-        <nav class="personage_tabs">
-            <button data-tab-button="harry" class="personage_tabs_button personage_tabs_button--is-active">
+        <nav class="personage_tabs" aria-label="Categorias de personagens do carrossel">
+            <button type="button" data-tab-button="harry" class="personage_tabs_button personage_tabs_button--is-active">
                 Harry Potter
             </button>
-            <button data-tab-button="beasts" class="personage_tabs_button">
+            <button  type="button" data-tab-button="beasts" class="personage_tabs_button">
                 Animais Fantásticos
             </button>
         </nav>
@@ -354,7 +355,7 @@
                     </p>
                 </li>
                 <li class="personage_list_item">
-                    <img src="./dist/images/personagem/2.2Tina Goldstein.jpg" alt="Tina Goldstein ">
+                    <img src="./dist/images/personagem/2.2Tina Goldstein.jpg" alt="Tina Goldstein">
                     <h3 class="title--small">
                         Tina Goldstein 
                     </h3>
@@ -473,17 +474,22 @@
                 </li>
             </ul>
             <p class="text--small">
-                © 2026 Wizarding World. Projeto desenvolvido por Patrícia Cruz.
+                © 2026 Patrícia Cruz. Projeto desenvolvido para fins educacionais.
+            </p>
+            <p class="text--small">
+                Projeto educacional desenvolvido para fins de
+                portfólio, sem vínculo oficial com a franquia
+                Wizarding World.
             </p>
             <ul class="footer_links">
                 <li class="footer_links_item">
                     <a href="http://www.linkedin.com/in/pattríciacruz">
-                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li class="footer_links_item">
                     <a href="https://github.com/p1Helena">
-                        <i class="bi bi-github"></i>
+                        <i class="bi bi-github"  aria-hidden="true"></i>
                     </a>
                 </li>
             </ul>
