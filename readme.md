@@ -80,7 +80,7 @@ The project was evaluated using Google Lighthouse in a local development environ
 
 | Metric | Desktop | Mobile |
 |---|---:|---:|
-| Performance | 82.5 | 71 |
+| Performance | 94 | 73.5 |
 | Accessibility | 92 | 92 |
 | Best Practices | 96 | 96 |
 | SEO | 100 | 100 |
@@ -224,7 +224,7 @@ O projeto foi avaliado utilizando o Google Lighthouse em ambiente de desenvolvim
 
 | Métrica | Desktop | Mobile |
 |---|---:|---:|
-| Performance | 82,5 | 71 |
+| Performance | 94 | 73.5 |
 | Acessibilidade | 92 | 92 |
 | Boas práticas | 96 | 96 |
 | SEO | 100 | 100 |
