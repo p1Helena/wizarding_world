@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="header">
+    <nav class="navbar navbar-dark">
+        <div class="header_container container-fluid">
+            <h1>
+                <a href="#inicio">
+                    <img class="header_logo" src="./dist/images/logo.png" alt="Wizarding World">
+                </a>
+            </h1>
+
+            <!-- Menu hambúrguer -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Alternar navegação">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Links de navegação -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="header_links navbar-nav ms-auto">
+                    <li class="header_links_item">
+                        <a href="#inicio" class="nav-link text--small">Início</a>
+                    </li>
+                    <li class="header_links_item">
+                        <a href="#intro" class="nav-link text--small">Introdução</a>
+                    </li>
+                    <li class="header_links_item">
+                        <a href="#film" class="nav-link text--small">Filmes</a>
+                    </li>
+                    <li class="header_links_item">
+                        <a href="#personagens" class="nav-link text--small">Sobre personagens</a>
+                    </li>
+                    <li class="header_links_item">
+                        <a href="#personage" class="nav-link text--small">Personagens</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <section class="hero" id="inicio">
+        <div class="hero_content"> 
+            <div class="hero_content_branding">
+                <img src="./dist/images/logo.png" alt="Wizarding World">
+            </div>
+            <h3 class="title--small">
+                Embarque em uma jornada pelo mundo da magia.
+            </h3>
+            <p class="text">
+                A magia está mais perto do que você imagina. Descubra histórias encantadoras, viva aventuras extraordinárias e deixe-se envolver pelos mistérios do mundo bruxo.
+            </p>
+            <a href="#film">
+                <button class="button">Filmes</button>
+            </a>
+        </div>
+        <div class="hero_video">
+            <video autoplay muted loop playsinline controls>
+                <source src="./dist/video/video-de-entrada.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div  class="image-text-section image-text-section--imagem-full-width" id="intro">
+            <picture>
+                <img src="./dist/images/view-castle-night-with-scary-atmosphere.jpg" alt="Castle night">
+            </picture>
+            <div class="image-text-section_text_container image-text-section--imagem-full-width_text_container">
+                <h2 class="title--big">Explore o Mundo Bruxo</h2>
+                <p class="text--big">
+                    Embarque em uma jornada extraordinária pelo universo mágico de Harry Potter e Animais Fantásticos. Reviva aventuras inesquecíveis, descubra criaturas fascinantes, explore os mistérios da magia e encante-se com histórias que atravessam gerações. Prepare sua varinha e mergulhe em uma seleção de filmes e séries onde o extraordinário se torna realidade.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="film" id="film">
+        <nav class="film_tabs">
+            <button data-tab-button="harry" class="film_tabs_button film_tabs_button--is-active">
+                Harry Potter
+            </button>
+            <button data-tab-button="beasts" class="film_tabs_button">
+                Animais Fantásticos
+            </button>
+        </nav>
+        <ul data-tab-id="harry" class="film_list film_list--is-active">
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=O7JVilOQdZ4"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/harry potter/1Harry_Potter_Pedra_Filosofal_2001.jpg" alt="Harry Potter e a Pedra Filosofal">
+                </a>
+            </li>
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=cf0rRYvDuys"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/harry potter/2harry-potter-and-the-chamber-of-secrets.jpg" alt="Harry Potter e a Câmara Secreta">
+                </a>
+            </li>
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=e02fwhC6DiQ"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/harry potter/3Harry_Potter_Prisioneiro_Azkaban_2004.jpg" alt="Harry Potter e o Prisioneiro de Azkaban">
+                </a>
+            </li>
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=MJq96H-zecA"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/harry potter/4harry-potter-e-o-calice-de-fogo.jpg" alt="Harry Potter e o Cálice de Fogo">
+                </a>
+            </li>
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=QlzW0x3qSCI"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/harry potter/5harry-potter-and-the-order-of-the-phoenix.jpg" alt="Harry Potter e a Ordem da Fênix">
+                </a>
+            </li>
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=sG-LDd5IUAk"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/harry potter/6harry-potter-and-the-half-blood-prince.jpg" alt="Harry Potter e o Enigma do Príncipe">
+                </a>
+            </li>
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=kmXjPbN-rYU"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/harry potter/7harry-potter-and-the-deathly-hallows-part-1.png" alt="Harry Potter e as Relíquias da Morte: Parte 1">
+                </a>
+            </li>
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=XS3fRKaapKY"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/harry potter/8harry-potter-and-the-deathly-hallows-part-2.jpg" alt="Harry Potter e as Relíquias da Morte: Parte 2">
+                </a>
+            </li>
+        </ul>
+
+        <ul data-tab-id="beasts" class="film_list">
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=TiaxfJ7QrIo"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/animais_fantasticos/1Animais-Fantasticos-Onde-Habitam.jpg" alt="Animais Fantásticos e Onde Habitam">
+                </a>
+            </li>
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=YNskLKO_FzE"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/animais_fantasticos/2Fantastic_Beasts_The_Crimes_of_Grindelwald.jpg" alt="Animais Fantásticos: Os Crimes de Grindelwald">
+                </a>
+            </li>
+            <li class="film_list_item">
+                <a href="https://www.youtube.com/watch?v=5SjYFF2g35c"
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <img src="./dist/images/animais_fantasticos/3Fantastic_Beasts_The_Secrets_of_Dumbledore.jpg" alt="Animais Fantásticos: Os Segredos de Dumbledore">
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="personagens" id="personagens">
+        <nav class="personagens_tabs">
+            <button data-tab-button="harry" class="personagens_tabs_button personagens_tabs_button--is-active">
+                Harry Potter
+            </button>
+            <button data-tab-button="beasts" class="personagens_tabs_button">
+                Animais Fantásticos
+            </button>
+            <button data-tab-button="repeated" class="personagens_tabs_button">
+                Personagem Repitidos
+            </button>
+        </nav>
+
+        <div  class="personagens_select_container">
+            <select class="personagens_select">
+                <option value="harry">Harry Potter</option>
+                <option value="beasts">Animais Fantásticos</option>
+                <option value="repeated">Personagens Repitidos</option>
+            </select>
+            <i class="bi bi-caret-down-fill" aria-hidden="true"></i>
+        </div>
+
+        <div data-tab-id="harry" class="personagens_intro personagens_intro--is-active">
+            <div class="image-text-section image-text-section--imagem-full-width">
+                <picture>
+                    <img src="./dist/images/harry-jogo.jpg" alt="Castle night">
+                </picture>
+                <div class="image-text-section_text_container image-text-section--imagem-full-width_text_container">
+                    <h2 class="title--big">Personagens de Harry Potter</h2>
+                    <p class="text--big">
+                        Conheça os personagens que marcaram gerações e fizeram de Hogwarts um lugar inesquecível. De Harry, Rony e Hermione aos grandes mestres e temíveis vilões, descubra suas histórias, habilidades e os desafios que enfrentaram ao longo dessa jornada mágica.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-tab-id="beasts" class="personagens_intro">
+            <div class="image-text-section image-text-section--imagem-full-width">
+                <picture>
+                    <img src="./dist/images/animais fantasticos desktop.png" alt="Castle night">
+                </picture>
+                <div class="image-text-section_text_container image-text-section--imagem-full-width_text_container">
+                    <h2 class="title">Personagens de Animais Fantásticos</h2>
+                    <p class="text--big">
+                        Explore o universo de Newt Scamander e seus companheiros em uma época repleta de descobertas, criaturas extraordinárias e conflitos mágicos. Conheça os bruxos e trouxas que protagonizaram aventuras e transformaram a história do mundo bruxo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div data-tab-id="repeated" class="personagens_intro">
+            <div class="image-text-section image-text-section--imagem-full-width">
+                <picture>
+                    <img src="./dist/images/retratos castelo.jpg" alt="Castle night">
+                </picture>
+                <div class="image-text-section_text_container image-text-section--imagem-full-width_text_container">
+                    <h2 class="title">Personagens que Conectam Gerações</h2>
+                    <p class="text--big">
+                        Descubra os personagens que unem os universos de Harry Potter e Animais Fantásticos. De Alvo Dumbledore a Gellert Grindelwald e Nicolas Flamel, conheça suas trajetórias, seus segredos e a importância de suas histórias na construção do mundo mágico que atravessa gerações.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="personage" id="personage">
+        <nav class="personage_tabs">
+            <button data-tab-button="harry" class="personage_tabs_button personage_tabs_button--is-active">
+                Harry Potter
+            </button>
+            <button data-tab-button="beasts" class="personage_tabs_button">
+                Animais Fantásticos
+            </button>
+        </nav>
+        <div class="personage_carousel">
+            <button type="button"
+                class="personage_arrow personage_arrow--prev"
+                aria-label="Personagens anteriores">
+                &#10094;
+            </button>
+
+            <ul data-tab-id="harry" class="personage_list personage_list--is-active">
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/1.1harry-potter.jpg" alt="Harry Potter">
+                    <h3 class="title--small">
+                        Harry Potter
+                    </h3>
+                    <p class="text--small">
+                        O protagonista órfão conhecido pela cicatriz em forma de raio na testa e por ter sobrevivido ao ataque de Voldemort.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/1.2Rony-scaled.jpg" alt="Rony Weasley">
+                    <h3 class="title--small">
+                        Rony Weasley
+                    </h3>
+                    <p class="text--small">
+                        Melhor amigo de Harry, leal e integrante da numerosa família Weasley.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/1.3Hermione_Granger_poster.jpg" alt="Hermione Granger">
+                    <h3 class="title--small">
+                        Hermione Granger
+                    </h3>
+                    <p class="text--small">
+                        Melhor amiga de Harry e Rony, reconhecida pela inteligência e pelo domínio dos estudos mágicos.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/1.4draco malfoy.jpg" alt="Draco Malfoy">
+                    <h3 class="title--small">
+                        Draco Malfoy
+                    </h3>
+                    <p class="text--small">
+                        Aluno da Sonserina e principal rival de Harry nos tempos de Hogwarts.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/1.5AlbusDumbledore.jpg" alt="Alvo Dumbledore">
+                    <h3 class="title--small">
+                        Alvo Dumbledore
+                    </h3>
+                    <p class="text--small">
+                        Diretor de Hogwarts e um dos bruxos mais poderosos e sábios do mundo mágico.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/1.6Minerva McGonagall.jpg" alt="Minerva McGonagall">
+                    <h3 class="title--small">
+                        Minerva McGonagall
+                    </h3>
+                    <p class="text--small">
+                        Professora de Transfiguração, chefe da Grifinória e figura firme e justa na escola.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/1.7Severo Snape.jpg" alt="Severo Snape">
+                    <h3 class="title--small">
+                        Severo Snape
+                    </h3>
+                    <p class="text--small">
+                        Professor de Poções (e depois de Defesa Contra as Artes das Trevas) e chefe da Sonserina, de postura enigmática.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/1.8RubeusHagrid.jpg" alt="Rúbeo Hagrid">
+                    <h3 class="title--small">
+                        Rúbeo Hagrid
+                    </h3>
+                    <p class="text--small">
+                        Guarda-caça de Hogwarts, professor de Trato das Criaturas Mágicas e amigo próximo do trio.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/1.9Lord Voldemort.jpg" alt="Lord Voldemort">
+                    <h3 class="title--small">
+                        Lord Voldemort (Tom Riddle)
+                    </h3>
+                    <p class="text--small">
+                        O Lorde das Trevas e líder dos Comensais da Morte, principal antagonista da saga.
+                    </p>
+                </li>
+            </ul>
+            <ul data-tab-id="beasts" class="personage_list">
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/2.1Newt Scamander.jpg" alt="Newt Scamander">
+                    <h3 class="title--small">
+                        Newt Scamander
+                    </h3>
+                    <p class="text--small">
+                        Magizoologista britânico reservado que protege e estuda criaturas mágicas.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/2.2Tina Goldstein.jpg" alt="Tina Goldstein ">
+                    <h3 class="title--small">
+                        Tina Goldstein 
+                    </h3>
+                    <p class="text--small">
+                        Auror/funcionária do Congresso Mágico dos Estados Unidos (MACUSA) com forte senso de justiça.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/2.3Jacob Kowalski.jpg" alt="Jacob Kowalski">
+                    <h3 class="title--small">
+                        Jacob Kowalski
+                    </h3>
+                    <p class="text--small">
+                        Padeiro trouxa (nomad) bondoso e corajoso, amigo próximo de Newt e parte da equipe de Dumbledore.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/2.4Queenie Goldstein.jpg" alt="Queenie Goldstein">
+                    <h3 class="title--small">
+                        Queenie Goldstein
+                    </h3>
+                    <p class="text--small">
+                        Irmã mais nova de Tina e legilimente talentosa (lê mentes), com trajetórias marcadas por escolhas complexas ao longo da trilogia.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/2.5Alvo Dumbledore.jpg" alt="Alvo Dumbledore">
+                    <h3 class="title--small">
+                        Alvo Dumbledore 
+                    </h3>
+                    <p class="text--small">
+                        Professor de Transfiguração em Hogwarts que recruta Newt e aliados para enfrentar Grindelwald.
+                    </p>
+                </li>
+                <li class="personage_list_item">
+                    <img src="./dist/images/personagem/2.6Credence Barebone.jpg" alt="Credence Barebone">
+                    <h3 class="title--small">
+                        Credence Barebone / Aurélio Dumbledore
+                    </h3>
+                    <p class="text--small">
+                        Jovem com imenso poder obscuro, peça-chave nos planos de Grindelwald e na história da família Dumbledore.
+                    </p>
+                </li>
+            </ul>
+            <button type="button"
+                class="personage_arrow personage_arrow--next" 
+                aria-label="Próximos personagens">
+                &#10095;
+            </button>
+        </div>
+    </section>
+    <section class="faq">
+        <h2 class="title--big">Perguntas frequentes</h2>
+        <ul class="faq_questions">
+            <li class="faq_questions_item">
+                <div class="faq_questions_item_question" data-faq-question>
+                    O que é o Wizarding World?
+                </div>
+                <div class="faq_questions_item_answer text--big">
+                    <p>Wizarding World é o universo mágico criado por J.K. Rowling, que reúne as histórias de Harry Potter e Animais Fantásticos. Nesse universo, você encontrará:</p>
+                    <ul>
+                        <li>
+                            <p>Histórias de magia, amizade, coragem e grandes aventuras.</p>
+                        </li>
+                        <li>
+                            <p>Bruxos, criaturas mágicas e personagens inesquecíveis.</p>
+                        </li>
+                        <li>
+                            <p>Lugares fascinantes, como Hogwarts, Hogsmeade e o Beco Diagonal.</p>
+                        </li>
+                        <li>
+                            <p>Segredos e acontecimentos que conectam diferentes gerações do mundo bruxo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="faq_questions_item">
+                <div class="faq_questions_item_question" data-faq-question>
+                    Qual é a ordem cronológica dos filmes?
+                </div>
+                <div class="faq_questions_item_answer text--big">
+                    <p>Para acompanhar os acontecimentos do mundo bruxo em ordem cronológica, comece pela trilogia Animais Fantásticos e, em seguida, assista aos oito filmes da saga Harry Potter, seguindo a ordem de lançamento de cada franquia.</p>
+                </div>
+            </li>
+            <li class="faq_questions_item">
+                <div class="faq_questions_item_question" data-faq-question>
+                    Qual é a relação entre Harry Potter e Animais Fantásticos?
+                </div>
+                <div class="faq_questions_item_answer text--big">
+                    <p>As duas sagas pertencem ao mesmo universo mágico, mas acontecem em épocas diferentes.</p>
+                    <p>Animais Fantásticos explora os acontecimentos que antecedem a história de Harry Potter, acompanhando as aventuras de Newt Scamander e a ascensão de Gellert Grindelwald.</p>
+                    <p>Personagens como Alvo Dumbledore e Nicolas Flamel conectam as duas histórias.</p>
+                    <p>Juntas, as franquias revelam diferentes períodos, conflitos e segredos do mundo bruxo.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer_container">
+            <img class="footer_logo" src="./dist/images/logo.png" alt="">
+            <ul class="footer_links">
+                <li class="footer_links_item">
+                    <a href="#inicio" class="text--small">Início</a>
+                </li>
+                <li class="footer_links_item">
+                    <a href="#intro" class="text--small">Introdução</a>
+                </li>
+                <li class="footer_links_item">
+                    <a href="#film" class="text--small">Filmes</a>
+                </li>
+                <li class="footer_links_item">
+                    <a href="#personagens" class="text--small">Sobre personagens</a>
+                </li>
+                <li class="footer_links_item">
+                    <a href="#personage" class="text--small">Personagens</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                © 2026 Wizarding World. Projeto desenvolvido por Patrícia Cruz.
+            </p>
+            <ul class="footer_links">
+                <li class="footer_links_item">
+                    <a href="http://www.linkedin.com/in/pattríciacruz">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li class="footer_links_item">
+                    <a href="http://www.github.com/pattríciacruz">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./dist/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

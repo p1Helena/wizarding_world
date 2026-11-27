@@ -1,0 +1,137 @@
+@use 'sass:color';
+@use 'variaveis';
+@use 'fontes';
+@use 'hero';
+@use 'film';
+@use 'personage';
+@use 'personagens';
+@use 'header';
+@use 'footer';
+@use 'faq';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fontes.$fontePrincipal;
+    list-style: none;
+}
+
+body {
+    background-color: variaveis.$corDeFundo;
+    color: variaveis.$corTextoPrincipal;
+
+    .film,
+    .personage,
+    .personagens,
+    .image-text-section {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 32px 0;
+
+        @media (max-width: 768px) {
+            .personagens{
+                padding: 0 0 0 32px;
+            }
+        }
+    }
+}
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    color: variaveis.$corTextoSecundario;
+    background-color: variaveis.$corDeFundoBotaoPrimario;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$corDeFundoBotaoPrimario;
+
+    &:hover {
+            background-color: color.adjust(variaveis.$corDeFundoBotaoPrimario, $lightness: 5%);
+        }
+}
+
+.image-text-section {
+    width: 100%;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: top;
+        display: block;
+        filter: brightness(40%);
+    }
+
+    &_text_container {
+        padding: 0 2vw;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--imagem-full-width {
+        display: block;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+        
+        &_text_container{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: calc(50% - 6vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            @media (max-width: 768px) {
+                margin-top: 32px;
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.intro {
+    margin-top: 70px;
+
+    .image-text-section{
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+
+        @media (max-width: 768px) {
+            &--imagem-full-width_text_container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                margin-top: 0;
+                padding: 20px;
+                text-align: center;
+            }
+        }
+    }
+
+}

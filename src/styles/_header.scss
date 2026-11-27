@@ -1,0 +1,97 @@
+@use 'variaveis';
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variaveis.$corDeHeader;
+    transition: background-color .5s ease;
+    z-index: 10;
+
+    &--is-hidden {
+        background-color: transparent;
+
+        .header_container {
+            max-width: 1850px;
+            width: 98%;
+        }
+
+        .header_logo,
+        .header_links_item:first-child {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .5s ease;
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: variaveis.$corDeFundoBotaoSecundario;
+        font-size: 35px;
+    }
+
+    &_container {
+        max-width: 1600px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        transition: width .5s ease, max-width .5s ease;
+    }
+
+    &_logo {
+        width: 90px;
+        display: block;
+        margin: 5px;
+        transition: opacity .5s ease;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 240px;
+        background-color: variaveis.$corDeHeader;
+        border-radius: 4px;
+    }
+
+    .collapse:not(.show) {
+        display: none;
+    }
+
+
+    &_links {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: right;
+        padding: 20px;
+
+        &_item {
+            transition: opacity .5s ease, visibility .5s ease;
+
+            a {
+                color: variaveis.$corDeFundoBotaoSecundario;
+                filter: brightness(60%);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: filter .3s ease;
+
+                &:hover {
+                    filter: brightness(90%);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &_logo {
+            width: 64px;
+        }
+    }
+}

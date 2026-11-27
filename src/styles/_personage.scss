@@ -1,0 +1,132 @@
+@use 'variaveis';
+
+.personage {
+    width: 98%;
+
+    &_carousel {
+        position: relative;
+        width: 100%;
+        min-width: 0;
+
+        @media (max-width: 768px) {
+            width: 90%;
+            margin: 0 auto;
+            align-items: center;
+        }
+    }
+
+    &_arrow {
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        z-index: 2;
+        width: 40px;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 28px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.95);
+        }
+
+        &--prev {
+            left: 0;
+        }
+
+        &--next {
+            right: 0;
+        }
+    }
+    
+    &_list {
+        display: none;
+        gap: 16px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        padding-bottom: 10px 0 16px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &--is-active {
+            display: flex;
+        }
+
+        &_item {
+            flex: 0 0 220px;
+            min-width: 0;
+            scroll-snap-align: start;
+            text-align: center;
+
+            img {
+                width: 100%;
+                aspect-ratio: 2 / 3;
+                object-fit: cover;
+                border-radius: 4px;
+                display: block;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+
+            @media (max-width: 1024px) {
+                flex: 0 0 calc((100% - 72px) / 4);
+            }
+
+
+            @media (max-width: 768px) {
+                flex: 0 0 calc((100% - 24px) / 2);
+            }
+        }
+    }
+
+
+    &_tabs {
+        display: flex;
+        justify-content: center;
+        padding: 80px 0 32px;
+
+        @media (max-width: 768px) {
+            white-space: nowrap;
+            overflow-x: auto;
+            padding: 32px 0 32px;
+        }
+
+        @media (max-width: 767px){
+            justify-content: flex-start;
+        }
+
+        &_button {
+            color: variaveis.$corTextoSecundario;
+            font-size: 20px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+
+            &--is-active {
+                border-bottom: 5px solid
+                    variaveis.$corTextoSecundario;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 18px;
+                margin: 0 6vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@use 'variaveis';
+
+@font-face {
+    font-family: MagicSchoolTwo;
+    src: url(../../fonts/MagicSchoolTwo.woff) format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+// Fontes
+$fontePrincipal: Arial, sans-serif;
+$fonteTitulo: MagicSchoolTwo, sans-serif;
+
+// Mixins
+@mixin text($fontSize: 16px) {
+    font-family: $fontePrincipal;
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variaveis.$corTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px) {
+    font-family: $fonteTitulo;
+    font-size: $fontSize;
+    color: variaveis.$corTextoSecundario;
+}
+
+// Textos
+.text--big {
+    @include text(20px);
+
+    @media (max-width: 768px) {
+        @include text(18px);
+    }
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 768px) {
+        @include text(15px);
+    }
+}
+
+.text--small {
+    @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text(11px);
+    }
+}
+
+// Títulos
+.title--big {
+    @include title(44px);
+
+    @media (max-width: 768px) {
+        @include title(35px);
+    }
+}
+
+.title {
+    @include title;
+
+    @media (max-width: 768px) {
+        @include title(30px);
+    }
+}
+
+.title--small {
+    @include title(32px);
+
+    @media (max-width: 768px) {
+        @include title(28px);
+    }
+}
